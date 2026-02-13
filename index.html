@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Para alguien especial ❤️</title>
+<title>Para la dueña de mis pensamientos ❤️</title>
 
 <style>
 body{
@@ -10,30 +10,39 @@ body{
     font-family: Arial;
     text-align:center;
     overflow:hidden;
+    color:white;
 }
 
 h1{
-    margin-top:80px;
-    font-size:40px;
-    color:white;
+    margin-top:70px;
+    font-size:38px;
+}
+
+p{
+    font-size:22px;
 }
 
 button{
-    padding:15px 30px;
-    font-size:20px;
+    padding:15px 35px;
+    font-size:22px;
     border:none;
-    border-radius:10px;
+    border-radius:12px;
     cursor:pointer;
     margin:20px;
+    transition:0.2s;
 }
 
 #si{
-    background: #00c853;
+    background:#00c853;
     color:white;
 }
 
+#si:hover{
+    transform:scale(1.1);
+}
+
 #no{
-    background: #d50000;
+    background:#d50000;
     color:white;
     position:absolute;
 }
@@ -42,7 +51,14 @@ button{
 
 <body>
 
-<h1>¿Quieres ser mi San Valentín? ❤️</h1>
+<h1>Para tus ojitos bonitos ✨</h1>
+
+<p>
+Tienes los ojos más bellos que he visto…<br>
+y me gustaría verlos en mi vida todos los días ❤️
+</p>
+
+<h1>¿Quieres ser mi San Valentín? 💘</h1>
 
 <button id="si">Sí 😍</button>
 <button id="no">No 😢</button>
@@ -55,7 +71,7 @@ button{
 <script>
 const botonNo = document.getElementById("no");
 
-// botón NO huye
+// botón NO escapa
 botonNo.addEventListener("mouseover",()=>{
     const x = Math.random() * window.innerWidth * 0.8;
     const y = Math.random() * window.innerHeight * 0.8;
@@ -63,13 +79,17 @@ botonNo.addEventListener("mouseover",()=>{
     botonNo.style.top = y + "px";
 });
 
-// botón SI
+// botón SI final
 document.getElementById("si").addEventListener("click",()=>{
     document.body.innerHTML = `
-    <h1 style="margin-top:120px;color:white;">
-    Sabía que dirías que sí ❤️<br>
-    Ahora eres oficialmente mi San Valentín 😎💘
-    </h1>
+    <div style="margin-top:120px">
+    <h1>Naim ❤️</h1>
+    <h1>Sabía que dirías que sí 😍</h1>
+    <p style="font-size:28px">
+    Ahora oficialmente eres<br>
+    la dueña de mi corazón 💘
+    </p>
+    </div>
     `;
 });
 </script>
